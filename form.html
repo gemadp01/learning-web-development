@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="pem web">
+    <meta name="keywords" content="HTML, CSS, Javascript">
+    <meta name="author" content="gemadp">
+    <title>Document</title>
+</head>
+<body>
+    <!-- tag pada form 
+    - input
+    - textarea
+    - select
+    - button
+    - label
+    -->
+    <!--tag input
+    - text
+    - password
+    - radio
+    - checkbox
+    - submit -,-
+    - reset -,-
+    - button -,-
+    -->
+    <!--Elemen input pada form ada tag label-->
+    <form>
+        <!--label untuk elemen username 
+        dibawah berupa input dengan id
+        dan id harus sama dengan for
+        jadi saling memiliki/berpasangan
+        (id sebagai penanda)-->
+        <label for="username">Username:</label>
+        <input type="text" id="username">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+        <br>
+        <!--atribut name untuk grouping
+        untuk mengetahui bahwa 2 radio button 1 grup
+        -->
+        <input type="radio" id="pria" name="gender"><label for="pria">Pria</label>
+        <input type="radio" id="wanita" name="gender"><label for="wanita">Wanita</label>
+        <br>
+        <input type="checkbox" id="menyanyi"><label for="menyanyi">Menyanyi</label>
+        <input type="checkbox" id="olahraga"><label for="olahraga">olahraga</label>
+        <input type="checkbox" id="ngoding"><label for="ngoding">Ngoding</label>
+        <br>
+        <!--text area mirip dengan textfield
+        hanya saja lebih banyak-->
+        <textarea></textarea>
+        <br>
+        <!--drop down - select
+        semacam combo box-->
+        <select>
+            <option>Bandung</option>
+            <option>Jakarta</option>
+            <option>Yogyakarta</option>
+        </select>
+        <br>
+        <!--
+            elemen pada button ialah
+            - submit
+            - reset
+            - button (memberi fungsi spesifik terhadap button)
+        -->
+        <button type="submit">Kirim</button>
+        <!--tidak dianjurkan membuat tombol submit menggunakan tag input
+        values untuk mengganti nilai didalam submit
+        -->
+        <!-- <input type="submit" values="Kirim"> -->
+        <br>
+    </form>
+</body>
+</html>
