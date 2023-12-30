@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../fonts/BebasNeue-Regular.woff') format('woff');
+}
+body {
+    font: normal normal normal 14px/28px 'BebasNeue', 'Arial', sans-serif;
+    background-color: gray;
+}
+.judul {
+    color: black;
+    margin: 20px;
+    font-size: 38px;
+    text-align: center;
+    text-shadow: 0 .5px 1px white;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 15px;
+    width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 1px black;
+}
+.gallery li{
+    display: inline-block;
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 65px;
+    position: relative;
+    overflow: hidden;
+}
+.gallery span{
+    display: block;
+    color: black;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    background-color: rgba(200, 200, 200, .5);
+    transform: scale(0) rotate(0);
+    opacity: 0;
+    transition: .5s;
+}
+.gallery a:hover span {
+    transform: scale(1) rotate(360deg);
+    opacity: 1;
+}
+.overlay {
+    width: 0;
+    height: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    padding: 60px 0 60px 0;
+    z-index: 9999;
+}
+.overlay:target {
+    width: auto;
+    height: auto;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+.overlay img {
+    max-height: 100%;
+    box-shadow: 0 0 5px 2px black;
+    opacity: 0;
+}
+.overlay:target img {
+    animation: ZoomIn 1s forwards;
+}
+.overlay .closed {
+    color: white;
+    position: absolute;
+    top: 0;
+    margin-top: 15px;
+    margin-left: 165px;
+    text-decoration: none;
+    background-color: black;
+    opacity: 0;
+    line-height: 20px;
+}
+.overlay:target .closed {
+    animation: SlideIn .5s 1s forwards;
+}
+
+
+@keyframes ZoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes SlideIn {
+    0% {
+        opacity: 0;
+        margin-top: 0;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 15px;
+    }
+}

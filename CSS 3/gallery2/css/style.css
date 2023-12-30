@@ -1,0 +1,136 @@
+/* Fonts */
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../fonts/BebasNeue-Regular.woff') format('woff');
+}
+
+body {
+    font: 18px/36px 'BebasNeue', 'Arial Narrow', arial, sans-serif;
+    background-color: #ddd;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 20px;
+    text-align: center;
+    text-shadow: 1px 1px .5px white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px black;
+}
+
+.gallery li{
+    width: 120px;
+    height: 120px;
+    margin-right: 15px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+
+.gallery li img,
+.gallery li {
+    border-radius: 50%;
+}
+
+.gallery li span {
+    display: block;
+    width: 120px;
+    color: black;
+    text-align: center;
+    line-height: 120px;
+    position: absolute;
+    top: 0;
+    background-color: rgba(200, 200, 200, .5);
+    transition: .5s;
+    opacity: 0;
+    transform: scale(0) rotate(0);
+}
+
+.gallery li a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+
+/* clear */
+.clear {
+    clear: both;
+}
+
+.overlay {
+    width: 0;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    transition: 1s;
+    text-align: center;
+    padding: 60px 0 60px 0;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.overlay img {
+    max-height: 100%;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .5);
+}
+
+.overlay:target img {
+    animation: intdout 1s;
+}
+.overlay .close {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    line-height: 20px;
+    border: 1px solid white;
+    padding: 5px;
+    opacity: 0;
+}
+
+.overlay:target .close {
+    animation: closed 1s .5s forwards;
+}
+/* Animation */
+@keyframes intdout {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes closed {
+    0% {
+        opacity: 0;
+        margin-top: -10px;
+
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}

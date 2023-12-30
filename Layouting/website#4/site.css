@@ -1,0 +1,103 @@
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: lightblue;
+    z-index: 9999;
+}
+.container {
+    position: relative;
+    margin: 50px auto;
+    width: 960px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.ribbon a{
+    width: 300px;
+    height: 181px;
+    background-image: url(twitter.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -100000px;
+    position: absolute;
+    top: -24px;
+    right: -84px;
+}
+.header .judul {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 20px 0 5px 20px;
+}
+.header ul{
+    margin: 0 0 20px 20px;
+}
+.header ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.header a {
+    color: salmon;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.header a:hover {
+    color: lightblue;
+}
+.hero {
+    height: 250px;
+    background-image: url(hutao.jpg);
+    background-size: cover;
+    background-position: 0 -70px;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+}
+.content h2, .content .sidebar h3 {
+    font-size: 26px;
+    font-family: sans-serif;
+}
+.content .main {
+    width: 600px;
+    margin: 20px 0 0 20px;
+    float: left;
+}
+.main .penulis {
+    margin-bottom: 10px;
+    word-spacing: 0;
+    text-indent: 0;
+}
+.main p {
+    margin-bottom: 10px;
+    word-spacing: 10px;
+    text-indent: 16px;
+    text-align: justify;
+}
+.content .sidebar {
+    width: 300px;
+    margin-top: 20px;
+    float: right;
+}
+.content .sidebar img {
+    margin-right: 5px;
+    margin-top: 4px;
+    float: left;
+}
+.footer {
+    background-color: black;
+    padding: 20px;
+}
+.footer .copy {
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+/* Clear fix */
+.cf {
+    clear: both;
+}

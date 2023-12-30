@@ -1,0 +1,11 @@
+Intro
+ada beberapa browser yang belum support 
+properties css 3
+untuk mengatasinya agar properties tersebut
+berfungsi secara normal di browser popular
+kita harus menambahkan vendor-prefixes
+== vendor-prefixes ==
+-webkit-
+-moz-
+-ie-
+-o-

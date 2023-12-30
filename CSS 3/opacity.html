@@ -1,0 +1,46 @@
+<!--
+    Opacity
+    pemberian opacity
+    tingkat ketajaman warna/elemen
+    opacity: 0/1; 1 = 100
+    opacity: .5; = 0.5/50
+    
+    elemen child akan mengikuti opacity
+    terhadap parentnya dengan nilai setengahnya
+
+    opacity akan memberikan transparansi terhadap elemen html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(sakura.png);
+        }
+        .kotak1 {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: relative;
+        }
+        .kotak2 {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            position: absolute;
+            right: -50px;
+            bottom: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak1">
+        <div class="kotak2"></div>
+    </div>
+    
+</body>
+</html>

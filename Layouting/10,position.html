@@ -1,0 +1,50 @@
+<!-- 
+    Position
+    - static (default position), selain properti static
+    dapat menggunakan properti top, bottom, left, right
+    - relative
+    apabila sebuah tag diberi position relative
+    maka tag tersebut naik 1 dimensi dan dapat
+    mengakses properti top, bottom, left, right.
+    apabila tag tersebut digerakan maka ruang sebelumnya
+    masih tersisa.
+    position relative hanya dipake apabila hanya
+    ingin elemen tersebut naik 1 dimensi saja
+    - absolute
+    posisi berada dalam 1 dimensi sama dan mencari parent terdekat (non static)
+    - fixed
+    akan selalu berada di body/window dan tidak akan peduli apakah itu
+    static/nonstatic
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 50px;
+            height: 50px;
+        }
+        .satu {
+            background-color: aqua;
+        }
+        .dua {
+            background-color: blue;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        .tiga {
+            background-color: salmon;
+        }
+    </style>
+</head>
+<body>
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+</body>
+</html>

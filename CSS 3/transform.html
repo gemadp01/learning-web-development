@@ -1,0 +1,50 @@
+<!--
+    transform
+    properti css3 yang memungkinkan kita memanipulasi
+    format visual dari elemen HTML
+    format visual
+    - ukuran
+    - bentuk elemen
+    - posisis
+    transformasi 2D & 3D
+    transform: <fungsi>;
+
+    fungsi transformasi
+    - scale, memperbesar / memperkecil
+    - rotate, memutar
+    - skew, membuat condong / miring
+    - translate/translasi, mengubah posisi
+
+    transform: scale(2) = diperbesar 2x lipat
+    transform: scale(.5) = perkecil setengah dari ukuran kotak
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            text-align: center;
+            font-size: 20px;
+        }
+        .kotak {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px auto 0;
+            transition: 1s;
+        }
+        .kotak:hover {
+            transform: translate(20px);
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quos obcaecati qui aut minus dolores, accusamus accusantium dolore commodi a deserunt suscipit in similique magni tenetur repellat odio neque modi minima repellendus? Dolores explicabo reprehenderit, quisquam dolor, rerum quam rem illo dignissimos tempora commodi quidem labore! Provident quas consectetur quis beatae commodi perspiciatis minus voluptates vero omnis! Cumque consequatur, saepe incidunt voluptas iure vitae impedit ducimus pariatur corporis consequuntur deleniti eveniet numquam corrupti dolor quas distinctio! Ipsa, quia provident labore quas reiciendis illo magnam atque ipsum unde numquam iste corrupti, qui inventore similique necessitatibus dolor odio, illum placeat laboriosam accusamus?</p>
+</body>
+</html>

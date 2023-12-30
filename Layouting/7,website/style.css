@@ -1,0 +1,116 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Style */
+body {
+    font: normal normal normal 18px/28px arial, sans-serif;
+    background-color: lightblue;
+}
+.container {
+    width: 800px;
+    margin: auto;
+    background-color: azure;
+    box-sizing: border-box;
+}
+.header {
+    padding: 20px 20px 10px 20px;
+}
+.header .judul {
+    font-size: 24px;
+}
+.header ul li {
+    display: inline-block;
+    padding-top: 5px;
+    font-size: 15px;
+}
+.header a {
+    color: salmon;
+    text-decoration: none;
+}
+.header a:hover {
+    color: red;
+}
+.header a:active {
+    color: #9803fc;
+}
+.hero {
+    height: 250px;
+    background-image: url(hutao.jpg);
+    background-size: cover;
+    background-position: 0 -20px;
+    border-top: 1px solid salmon;
+    border-bottom: 1px solid salmon;
+}
+.content {
+    padding: 20px;
+}
+.content .judul {
+    margin-top: -5px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.content .penulis {
+    margin-top: -5px;
+    text-indent: 0;
+    font-size: 14px;
+}
+.content a {
+    color: salmon;
+    text-decoration: none;
+}
+.content p {
+    font-size: 14px;
+    padding-bottom: 10px;
+    text-indent: 16px;
+}
+.footer {
+    height: 50px;
+    background-color: black;
+}
+.footer .copy {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-style: oblique;
+}

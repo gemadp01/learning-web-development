@@ -1,0 +1,35 @@
+<!-- 
+    Filter
+    properti css3 yang digunakan untuk memberikan efek visual pada gambar, background, atau border
+    - blur(px)
+    - brightness(angka | %) default 100%/1 maksud 1 = 100% jadi 1.1 = 110%
+    gelap terang
+    - contrast(angka | %) sama halnya brightness
+    - saturate(angka | %) mengatur saturasi suatu gambar (agar semakin berwarna)
+    - grayscale(angka | %) nilai default 0 (abu abu)
+    - sepia(angka | %) nilai default 0 (menjadi kuning)
+    - hue-rotate(deg)
+    - invert(angka | %)
+    - opacity(angka | %)
+    - drop-shadow(sama seperti box-shadow)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        img {
+            filter: invert(100%);
+        }
+    </style>
+</head>
+<body>
+    <img src="hutao.png" alt="hehe">
+</body>
+</html>

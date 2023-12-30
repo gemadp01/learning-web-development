@@ -1,0 +1,49 @@
+<!--
+    Float
+    merupakan properti pada css untuk mengatur posisi sebuah elemen.
+    Sebuah elemen dapat dipaksa untuk berada di sebelah kiri atau kanan
+    dari parent/pembungkusnya dengan menggunakan properti ini.
+
+    - none
+    - left
+    - right
+
+    normal flow vs out-of flow
+
+    yang bisa dilakukan menggunakan properti float
+    - text wrapping
+    membuat teks mengelilingi gambar/elemen lain
+
+    - image gallery
+    membuat serangkaian gambar menjadi galeri
+
+    - multi-column layout
+    membuat halaman memiliki beberapa kolom
+
+    .kotak{$}*5 (membuat 5 class kotak dengan angka berurut 1-5)
+
+    perilaku float apabila sebuah kotak dikasih float dia keluar dari flow
+    sehingga container tidak menganggap bahwa ada kotak didalamnya yang
+    menjadikan container menjadi collapse
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container cf">
+        <div class="kotak1">1</div>
+        <div class="kotak2">2</div>
+        <div class="kotak3">3</div>
+        <!-- <div class="clear"></div> -->
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis ab quia veniam minima iusto, provident sequi expedita accusantium exercitationem ea corrupti ex temporibus iste, molestias, nemo officia fuga officiis qui? Distinctio accusantium itaque fuga magnam non, dolor vel tenetur, nostrum minus cum est placeat fugiat tempore nulla aliquam magni veritatis ab omnis id labore quam. Numquam deleniti omnis aperiam. Dolore consequatur, sapiente incidunt architecto natus debitis voluptatum non reprehenderit excepturi eos, iusto ipsum alias obcaecati. Accusamus soluta, aliquid voluptates incidunt nulla ipsam nisi! Rerum suscipit quae blanditiis ea fugiat dolore eos voluptatibus natus, reprehenderit assumenda neque quibusdam, odit facere expedita.</p>
+    </div>
+    
+</body>
+</html>

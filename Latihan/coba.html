@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba</title>
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            height: 100%;
+        }
+        .container {
+            width: 150px;
+            height: 150px;
+            position: relative;
+            border: 1px solid black;
+        }
+        /* div {
+            width: 150px;
+            height: 150px;
+            border-top-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+        } */
+        .satu, .dua, .tiga, .empat, .lima{
+            width: 150px;
+            height: 150px;
+            border-radius: 110px 0 110px 0;
+            position: absolute;
+            background-color: #fafafa;
+            box-shadow: 0 0 0 2px #7a7259, 0 0 0 6px #f7dc88, 0 0 0 8px #7a7259;
+        }
+        .satu {
+            top: -100px;
+            transform: rotate(-45deg);
+            z-index: 5;
+        }
+        .dua {
+            top: -30px;
+            right: -102px;
+            transform: rotate(25deg);
+            z-index: 4;
+        }
+        .tiga {
+            top: 80px;
+            right: -70px;
+            transform: rotate(95deg);
+            z-index: 3;
+        }
+        .empat {
+            top: 75px;
+            right: 60px;
+            transform: rotate(-10deg);
+            z-index: 2;
+        }
+        .lima {
+            top: -30px;
+            right: 100px;
+            transform: rotate(60deg);
+            z-index: 1;
+        }
+        .blur {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="blur"></div>
+        <div class="satu"></div>
+        <div class="dua"></div>
+        <div class="tiga"></div>
+        <div class="empat"></div>
+        <div class="lima"></div>
+    </div>
+</body>
+</html>

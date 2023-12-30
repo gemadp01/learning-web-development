@@ -1,0 +1,26 @@
+<!--
+    font-face
+    dengan mencari didalam brangkas folder kita
+    tetapi client tidak tau apa ada atau tidak font yang kita miliki ini
+
+    font-family: "Arial Narrow", arial, sans-serif;
+
+    cara kedua
+    1. copy link di head
+    2. copy sintakss pada link google
+
+    cara ketiga @font-face
+    simpan dipaling atas css
+    @font-face {
+        font-family: 'fontbaru';
+        src: url('lokasifile.eot');
+        src: url('lokasifile.eot?#iefix id/class') format('embedded-opentype'),
+        url('lokasifile.woff2') format('woff2'),
+        url('lokasifile.woff') format('woff'),
+        url('Lokasifile.ttf') format('truetype'),
+        url('lokasifile.svg#svgFontName id/class') format('svg');
+    }
+
+    mengubah font format ttf/otf menjadi woff
+    menggunakan web font generator
+-->

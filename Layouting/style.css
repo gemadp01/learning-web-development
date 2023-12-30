@@ -1,0 +1,33 @@
+.container {
+    width: 600px;
+    border: 1px solid black;
+    padding: 5px;
+    margin: auto;
+}
+
+.kotak1, .kotak2, .kotak3 {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.kotak1 {
+    background-color: salmon;
+    /* float: left; */
+}
+
+.kotak2 {
+    background-color: limegreen;
+    margin: 0 0 0 15px;
+    float: left;
+}
+
+.kotak3 {
+    background-color: lightskyblue;
+    /* float: left; */
+}
+
+/* .clear {
+    clear: left;
+} */

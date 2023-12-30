@@ -1,0 +1,13 @@
+.hello:link {
+    color: red;
+}
+.hello:hover {
+    color:aqua;
+    font-size: 20px;
+}
+.hello:active {
+    font-style: oblique;
+}
+.hello:visited {
+    color: green;
+}

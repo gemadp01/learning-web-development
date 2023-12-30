@@ -1,0 +1,12 @@
+body {
+    font: normal normal normal 12px/normal times new roman sans-serif;
+}
+p {
+    color: lightblue;
+    text-align: justify;
+    text-indent: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: normal;
+    word-spacing: normal;
+}

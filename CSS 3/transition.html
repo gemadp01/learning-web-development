@@ -1,0 +1,81 @@
+<!--
+    transition 
+    properti transition
+    memungkinkan kita dapat mengubah nilai dari property HTML secara halus
+    transition vs animation
+    transition: 
+    [property] <durasi> [fungsi] [delay];
+
+        property, all [nama property] none
+
+    property yang dapat diubah secara halus
+    - background-color
+    - background-position
+    - background-size
+    - border
+    - color
+    - filter
+    - font-size
+    - line-height
+    - top, left, bottom, right
+    - margin, padding,
+    - width, height
+    - opacity
+    - transform
+    - word-spacing
+    - letter-spacing
+
+    non-animatable properties
+    - font-family
+    - display
+    - position
+
+    fungsi transisi/timing function
+    beberapa nilai 
+    - ease (default)
+    - ease-in (pelan > pelan > ngebut)
+    - ease-out
+    - ease-in-out
+    - linear
+    - cubic-bezier(w,x,y,z)
+
+    delay, memberikan waktu tunggu sebelum kita menjalankan transisi
+    penumpukan
+    transition: margin-left 3s, rotate 2s 3s;
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 900px;
+            margin: 10px auto;
+            border: 1px solid black;
+        }
+        .kotak {
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            transition: 1s;
+        }
+        .container:hover .kotak{
+            transform: rotate(180deg);
+            margin-left: 800px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="kotak"></div>
+    </div>
+</body>
+</html>

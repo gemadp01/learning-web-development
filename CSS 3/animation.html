@@ -1,0 +1,57 @@
+<!--
+    animation
+    @keyframes [name] {
+        from {
+            [property-css]
+        }
+        
+        to{
+            [property-css]
+        }
+    }
+
+    nilai pada properties animation
+    [name], [duration], [timing-function], [delay],
+    [iteration-count]
+
+    - [iteration-count]
+    <angka> | infinite
+        default 1, 2 = 2x lipat
+
+    - [direction]
+    normal | reverse | alternate | alternate-reverse
+
+    - [fill-mode]
+    none | forwards | backward | both
+
+    - [play-state]
+    running | paused
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kotak {
+            width: 150px;
+            height: 150px;
+            background-color: lightblue;
+            animation: testing 2s linear 2 reverse forwards;
+        }
+        @keyframes testing {
+            0% {
+                margin-left: 100px;
+            }
+            100% {
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak"></div>
+</body>
+</html>

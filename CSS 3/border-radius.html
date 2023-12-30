@@ -1,0 +1,78 @@
+<!--
+    border radius
+    properties dari css 3 yang berfngsi
+    membuat kotak yang kita punya ujung"nya
+    menjadi tumpul.
+    semakin besar nilainya semakin tumpul ujungnya.
+    border-radius: ; memungkinkan semua ujung tumpul
+    apabila width lebih besar ketimbang height dan border-radius bernilai 50% (bulat) maka akan ellipse/gepeng
+    pertiap ujung dari kotak dapat diganti
+    border-top-right-radius: ;
+    border-top-left-radius: ;
+    border-bottom-right-radius: ;
+    border-bottom-left-radius: ;
+    kiri kanan, kanan kiri
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border radius</title>
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+            margin: 20px 10px auto;
+            float: left;
+        }
+        .kotak1 {
+            width: 300px;
+            height: 300px;
+            border: 8px solid gray;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .kotak2 {
+            border: 8px solid red;
+            border-radius: 75px 0 75px 0;
+        }
+        .kotak3 {
+            width: 300px;
+            height: 300px;
+            border: 8px solid green;
+            border-radius: 85px;
+            overflow: hidden;
+        }
+        .kotak4 {
+            height: 85px;
+            border: 8px solid blue;
+            border-radius: 85px 85px 0 0;
+        }
+        .kotak5 {
+            margin-top: 125px;
+            height: 85px;
+            border: 8px solid blue;
+            border-radius: 0 0 85px 85px;
+        }
+        .kotak6 {
+            border: 8px solid #deb850;
+            border-radius: 10px 85px 85px 10px;
+        }
+        img{
+            width: 300px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="kotak1"><img src="hutao256.png" alt=""></div>
+    <div class="kotak2"></div>
+    <div class="kotak3"><img src="hutao.png" alt=""></div>
+    <div class="kotak4"></div>
+    <div class="kotak5"></div>
+    <div class="kotak6"></div>
+</body>
+</html>
