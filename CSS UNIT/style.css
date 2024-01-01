@@ -2,9 +2,9 @@
     font-size: 10px;
 } */
 
-/* :root {
-    font-size: 10px;
-} */
+:root {
+    /* font-size: 10px; */
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -55,4 +55,16 @@ body {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+
+    padding: 1em 3em;
+    /* margin: 0 1.5em; */
+    margin: 0 1.5rem;
+}
+
+.btn-sm {
+    font-size: .5em;
+}
+
+.btn-lg {
+    font-size: 2em;
 }
