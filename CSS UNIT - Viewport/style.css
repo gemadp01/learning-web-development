@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.8em; /* 1.8em x 16px (default) = 28px */
+}
+
+h1 {
+    font-size: 4rem; /* 4rem x 16px (default) = 64px */
+    line-height: 1.2em; /* 1.2em x 4rem (ukuran font h1) = 4.8 x 16px (default) = 76,8px */
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0,0,0,.8);
+    text-align: center;
+}
+
+/* hanya untuk memberi style pada bagian section */
+
+section {
+    margin: 30px auto;
+    width: 80%;
+}
+
+section .detail {
+    font-size: 1.4rem; /* 1.4rem x 16px (default) = 22.4px */
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: .5em 0; /* .5em x 1.4rem (ukuran font element section) = 0.7 x 16px (default) = 11.2px */
+    margin-bottom: 2em; /* 2em x 1.4rem = 2.8 x 16px (default) = 44.8px */
+    color: #333;
+}
+
+section p {
+    font-size: 1.2em; /* 1.2em x 16px (default) = 19.2px */
+    margin-bottom: 1em; /* 1em x 1.2em = 1.2 x 16px (default) = 19.2px */
+    text-indent: 1em; /* 1em x 1.2em = 1.2 x 16px (default) = 19.2px */
+}
