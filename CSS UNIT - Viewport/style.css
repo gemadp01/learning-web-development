@@ -8,12 +8,25 @@ body {
     line-height: 1.8em; /* 1.8em x 16px (default) = 28px */
 }
 
+header {
+    background-color: #ccc;
+    background-image: url(img/high-angle-white-keyboard-desk.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+}
+
 h1 {
-    font-size: 4rem; /* 4rem x 16px (default) = 64px */
+    /* font-size: 4rem;  */
+    /* 4rem x 16px (default) = 64px */
+    /* font-size: 4vw; */
+    font-size: 4vmax;
     line-height: 1.2em; /* 1.2em x 4rem (ukuran font h1) = 4.8 x 16px (default) = 76,8px */
     color: white;
     text-shadow: 1px 1px 5px rgba(0,0,0,.8);
     text-align: center;
+    margin: auto;
 }
 
 /* hanya untuk memberi style pada bagian section */
