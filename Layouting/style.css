@@ -20,7 +20,7 @@
 .kotak2 {
     background-color: limegreen;
     margin: 0 0 0 15px;
-    float: left;
+    /* float: left; */
 }
 
 .kotak3 {
