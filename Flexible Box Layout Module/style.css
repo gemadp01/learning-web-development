@@ -5,20 +5,53 @@
     margin: 30px auto;
     padding: 5px;
     box-sizing: border-box;
+    display: flex;
+    /* flex-direction: row; */ /* default */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-evenly; */
+    /* align-items: baseline; */
 }
 
 /* .container::after {
     content: '';
     display: block;
+    border: 2px solid red;
     clear: both;
 } */
 
 .container div {
-    width: 100px;
-    height: 100px;
+    /* width: 100px;
+    height: 100px; */
     background-color: rgb(19, 133, 255);
+    margin: 2px;
+    flex: 1;
     /* float: left; */
 }
+
+.container div.dua {
+    flex: 2;
+    align-self: center;
+}
+
+/* .container div.satu {
+    font-size: 100px;
+} */
+
+/* .satu {
+    order: 2;
+}
+
+.dua {
+    order: 1;
+}
+
+.tiga {
+    order: 3;
+}
+
+.empat {
+    order: 4;
+} */
 
 /* Clear Float */
 /* .cf {
