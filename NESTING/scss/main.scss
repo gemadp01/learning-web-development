@@ -1,0 +1,58 @@
+// .main {
+//     background-color: lightblue;
+
+//     .main-heading {
+//         font-size: 2em;
+//     }
+
+//     .main-paragraph {
+//         font-size: 1.4em;
+//     }
+// }
+
+// .main, footer {
+//     h1, p {
+//         letter-spacing: 1px;
+//     }
+// }
+
+// $
+// Parent Selector
+// men-target element pada saat melakukan nesting
+
+// .main {
+//     .container & {
+//         background-color: lightblue;
+//     }
+
+//     .main-heading {
+//         font-size: 2em;
+//     }
+
+//     &:hover {
+//         background-color: salmon;
+//     }
+// }
+
+.main {
+// teknik interpolasi #{&}
+// seperti pada php, membaca variable didalam kutip dua
+    #{&}-heading {
+        font-size: 2em;
+    }
+
+    #{&}-paragraph {
+        font-size: 1.4em;
+    }
+
+}
+
+.footer {
+    & &-heading {
+        font-size: 2em;
+    }
+
+    & &-paragraph {
+        font-size: 1.4em;
+    }
+}
