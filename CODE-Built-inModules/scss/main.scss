@@ -1,0 +1,84 @@
+// Base
+$warna-dasar: salmon;
+
+h1 {
+    color: $warna-dasar;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+
+
+// Built-in Modules: Color
+/* 
+    adjust-color($color, 
+    $red: null, $green: null, $blue: null,
+    $hue: null, $saturation: null, $lightness: null,
+    $whiteness: null, $blackness: null,
+    $alpha: null);
+*/
+
+h1 {
+    // color: adjust-color($color: $warna-dasar, $green: 100, $blue: 100, $red: -50);
+}
+
+
+// adjust-hue($color, $degree);
+h1 {
+    // color: adjust-hue($warna-dasar, $degrees: 30deg);
+}
+
+
+// complement($color) - berkebalikan
+h1 {
+    // color: complement($warna-dasar);
+}
+
+
+// darken($color, $amount)
+h1 {
+    // color: darken($warna-dasar, $amount: 20%);
+}
+
+
+// lighten($color, $amount)
+h1 {
+    // color: lighten($warna-dasar, $amount: 10%);
+}
+
+
+// saturate($color, $amount) - Kermuniaan warna (menambahkan)
+h1 {
+    // color: saturate($warna-dasar, $amount: 30%);
+}
+
+
+// desaturate($color, $amount) - Menghilangkan warna
+h1 {
+    // color: desaturate($warna-dasar, $amount: 50%);
+}
+
+
+// grayscale($color) - membuat warna desaturate 100%
+h1 {
+    // color: grayscale($warna-dasar);
+}
+
+
+// mix($color1, $color2, $weight: 50%)
+// weight mempengaruhi color pertama
+h1 {
+    // color: mix($warna-dasar, blue, 80%);
+}
+
+
+// fade-in($color, $amount) - menambahkan opacity (default 1)
+h1 {
+    // color: fade-in(rgba(250, 128, 114, .2), 0.5);
+}
+
+
+// fade-out($color, $amount) - mengurangi opacity (default 1)
+h1 {
+    color: fade-out($warna-dasar, .4);
+}
