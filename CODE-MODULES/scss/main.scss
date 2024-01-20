@@ -1,0 +1,31 @@
+// .header ul, .footer ul {
+//     margin: 0;
+//     padding: 0;
+//     list-style: none;
+// }
+
+// .header ul li, .footer ul li {
+//     display: inline-block;
+// }
+
+// .header ul li {
+
+// }
+
+// .footer ul li {
+
+// }
+
+// Lebih modular - @import
+// @import 'modules/mixin';
+// @import 'modules/header';
+// @import 'modules/container';
+// @import 'modules/footer';
+
+// @import 'modules/mixin', 'modules/header', 'modules/container', 'modules/footer';
+
+
+// Lebih modular - @use
+@use 'modules/header';
+@use 'modules/container';
+@use 'modules/footer';
