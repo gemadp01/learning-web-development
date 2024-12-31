@@ -1,4 +1,4 @@
-Rekap Alur Pembelajaran Web Development dari Video Tutorial Web Programming Unpas (Youtube)
+Rekap Alur Pembelajaran Web Development dari Web Programming Unpas (WPU)
 
 link:
 https://www.youtube.com/@sandhikagalihWPU
