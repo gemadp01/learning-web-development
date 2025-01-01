@@ -42,15 +42,15 @@
 
 //? menampilkan semua nama mahasiswa saja kedalam console browser
 // hof sudah menerima parameter berupa callback
-console.log("mulai");
-mhs.forEach((m) => console.log(m.nama));
+// console.log("mulai");
+// mhs.forEach((m) => console.log(m.nama));
 // mhs.forEach((m) => {
 //   for (let i = 0; i < 100000000; i++) {
 //     let date = new Date();
 //   }
 //   console.log(m.nama);
 // });
-console.log("selesai");
+// console.log("selesai");
 
 //! Asynchronous Callback
 //* membuat sebuah function, ketika function dijalankan dia akan me-request data dengan ajax
